@@ -1,0 +1,1057 @@
+fileFormatVersion: 2
+guid: a94d71f1944d12248add1876e41ce819
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PizzaToppings_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 910
+        width: 94
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758091f57767bac4f80f0bbf0a1c534b
+      internalID: -1504354521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 905
+        width: 106
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026599f1ae29bd745af0f64ee6ba19a4
+      internalID: -903014187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 898
+        width: 109
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157e9868745c24f42bfcc69b51829676
+      internalID: 874488885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_7
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 903
+        width: 79
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2933913b223b64e86cf95efb986e01
+      internalID: -1460659165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_8
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 905
+        width: 80
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc3aae61ff77c24cbb55ce577a3557c
+      internalID: 422206382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_10
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 894
+        width: 71
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78ec39b76f21534098295d905f15ee5
+      internalID: 149995758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_11
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 905
+        width: 88
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b61c39c7d7872c4e8f57dea0066b693
+      internalID: 1518989946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_12
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 896
+        width: 97
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6528b6f0ec521f842a3bf9bd8531f402
+      internalID: 576545298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_15
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 906
+        width: 109
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5d0459174592c44abf7d21f2a1ca11
+      internalID: 1707546394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_22
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 896
+        width: 129
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628d7eda240af0042a3d729e7abb7dbf
+      internalID: -662859231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_24
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 892
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f9bda0fda307640ba54f144165c40c
+      internalID: -1139378144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_25
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 736
+        width: 73
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2987da91a43d9e047b3db84407090c4c
+      internalID: 537011419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_28
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 737
+        width: 127
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e1522591560be4d82e1ec021714cf4
+      internalID: 742640394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_48
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 732
+        width: 96
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8083fc7962150f4386c40a68b6f4f88
+      internalID: -2058144984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_49
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 738
+        width: 123
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4731e7feb46717f4daf2a13269f072e1
+      internalID: 1738525920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_50
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 736
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0106be0a6ce9214bbbdd80c5ceb8c44
+      internalID: 84724292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_51
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 726
+        width: 72
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ec39dbeb84f4a4e88bd9715a7a53f2
+      internalID: -200969742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_52
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 725
+        width: 119
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a46ecccd0ae9b34388039a76f623ec4
+      internalID: 182615049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_53
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 724
+        width: 119
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a01d870cb947f43a5e5c0fed0c36d0
+      internalID: 578414573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_73
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 553
+        width: 130
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b49cd606ac32044890ab9d15d33911
+      internalID: 1577775839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_74
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 536
+        width: 150
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aaf7d85076edcb4ca39299f0cae8b54
+      internalID: 1063066980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_75
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 328
+        width: 145
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e606e82226c5614381d7c98f1740609
+      internalID: -1734989467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_77
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 556
+        width: 81
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8cb4c7278a87e47b76709796835e5f
+      internalID: 715168243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_78
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 568
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa750533e9b6a1478d8895589d9ed43
+      internalID: -1332642056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_79
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 351
+        width: 96
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dd07e181b77fa469f30d438b1fa212
+      internalID: -1281016722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_80
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 536
+        width: 119
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0749579797c3b8a419ff7e4ec1cfeff0
+      internalID: 1872377544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_81
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 565
+        width: 131
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00a34036ad748a4d8ebaba96b8d5d8d
+      internalID: -418748859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_82
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 512
+        width: 82
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29812e5d29efb674dac003511852a3fc
+      internalID: -1358581840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_85
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 314
+        width: 110
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e7f7e7579b8f0428dde66e9d1a4e69
+      internalID: -575912076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_87
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 346
+        width: 119
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69f38c91e536ec44be8c69cfa4322e9
+      internalID: 1825346617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_94
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 352
+        width: 131
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a9417e6af74d14983ac5c334b4daae
+      internalID: 527912721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_100
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 178
+        width: 90
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181b0b5c842bbdb40a1d7344e4116881
+      internalID: 415622627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_101
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 158
+        width: 86
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d201a8d0997ad74bba581abeff4467c
+      internalID: 556164572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_102
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 157
+        width: 81
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1316cf26dac744abca7cb7fdceb225
+      internalID: -1321241293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_104
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 124
+        width: 138
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4e4dd9c21b3394ba66ba585e14690b
+      internalID: -146633273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_105
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 159
+        width: 152
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787621e9fdacfff44b7e3635831b3b0c
+      internalID: 1871554616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaToppings_107
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 138
+        width: 152
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8efe9ee88d1b54981fe1762e739f3e
+      internalID: -1745622312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cc545dfc7df369347802d5f4d37df599
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PizzaToppings_0: -1504354521
+      PizzaToppings_1: 1705698802
+      PizzaToppings_10: 149995758
+      PizzaToppings_100: 415622627
+      PizzaToppings_101: 556164572
+      PizzaToppings_102: -1321241293
+      PizzaToppings_103: -1399111863
+      PizzaToppings_104: -146633273
+      PizzaToppings_105: 1871554616
+      PizzaToppings_106: -85659945
+      PizzaToppings_107: -1745622312
+      PizzaToppings_108: 315592951
+      PizzaToppings_109: 1494886012
+      PizzaToppings_11: 1518989946
+      PizzaToppings_110: 2023891136
+      PizzaToppings_12: 576545298
+      PizzaToppings_13: -857580060
+      PizzaToppings_14: 1132701098
+      PizzaToppings_15: 1707546394
+      PizzaToppings_16: -213243214
+      PizzaToppings_17: 923697277
+      PizzaToppings_18: 45275324
+      PizzaToppings_19: 1263241202
+      PizzaToppings_2: -903014187
+      PizzaToppings_20: 1164938767
+      PizzaToppings_21: -1928613229
+      PizzaToppings_22: -662859231
+      PizzaToppings_23: -1882417261
+      PizzaToppings_24: -1139378144
+      PizzaToppings_25: 537011419
+      PizzaToppings_26: -2017410038
+      PizzaToppings_27: 402043324
+      PizzaToppings_28: 742640394
+      PizzaToppings_29: -412925500
+      PizzaToppings_3: 980584617
+      PizzaToppings_30: 1791535217
+      PizzaToppings_31: -100028806
+      PizzaToppings_32: -1236020534
+      PizzaToppings_33: 1788595675
+      PizzaToppings_34: -460617518
+      PizzaToppings_35: -44686717
+      PizzaToppings_36: -240093685
+      PizzaToppings_37: -869673656
+      PizzaToppings_38: -140573383
+      PizzaToppings_39: -775817266
+      PizzaToppings_4: 1095956302
+      PizzaToppings_40: 1320253861
+      PizzaToppings_41: -1273250709
+      PizzaToppings_42: 1156755676
+      PizzaToppings_43: -737300797
+      PizzaToppings_44: 1329343553
+      PizzaToppings_45: 1734885738
+      PizzaToppings_46: 262290623
+      PizzaToppings_47: 682590288
+      PizzaToppings_48: -2058144984
+      PizzaToppings_49: 1738525920
+      PizzaToppings_5: 874488885
+      PizzaToppings_50: 84724292
+      PizzaToppings_51: -200969742
+      PizzaToppings_52: 182615049
+      PizzaToppings_53: 578414573
+      PizzaToppings_54: 734815923
+      PizzaToppings_55: -315976329
+      PizzaToppings_56: -1016687198
+      PizzaToppings_57: -1171907923
+      PizzaToppings_58: 435853
+      PizzaToppings_59: -1768433101
+      PizzaToppings_6: -1884945742
+      PizzaToppings_60: -1941855424
+      PizzaToppings_61: -679514765
+      PizzaToppings_62: 177161678
+      PizzaToppings_63: 657156238
+      PizzaToppings_64: 1466458071
+      PizzaToppings_65: 810324457
+      PizzaToppings_66: -1422320258
+      PizzaToppings_67: 182974479
+      PizzaToppings_68: -16107781
+      PizzaToppings_69: 460181223
+      PizzaToppings_7: -1460659165
+      PizzaToppings_70: -1352723822
+      PizzaToppings_71: 1662912405
+      PizzaToppings_72: -2117029490
+      PizzaToppings_73: 1577775839
+      PizzaToppings_74: 1063066980
+      PizzaToppings_75: -1734989467
+      PizzaToppings_76: 864371772
+      PizzaToppings_77: 715168243
+      PizzaToppings_78: -1332642056
+      PizzaToppings_79: -1281016722
+      PizzaToppings_8: 422206382
+      PizzaToppings_80: 1872377544
+      PizzaToppings_81: -418748859
+      PizzaToppings_82: -1358581840
+      PizzaToppings_83: -236142349
+      PizzaToppings_84: -83795045
+      PizzaToppings_85: -575912076
+      PizzaToppings_86: 1175532976
+      PizzaToppings_87: 1825346617
+      PizzaToppings_88: 652661893
+      PizzaToppings_89: 1251900689
+      PizzaToppings_9: -571572460
+      PizzaToppings_90: 1486714852
+      PizzaToppings_91: -190280987
+      PizzaToppings_92: 1849221720
+      PizzaToppings_93: -2015104055
+      PizzaToppings_94: 527912721
+      PizzaToppings_95: -1318769168
+      PizzaToppings_96: 583925728
+      PizzaToppings_97: 1269132280
+      PizzaToppings_98: -1992145178
+      PizzaToppings_99: -2096992519
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
