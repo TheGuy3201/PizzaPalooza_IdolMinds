@@ -66,6 +66,11 @@ public class PP_GameManager : MonoBehaviour
         }
 
         hud?.Refresh(this);
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public float GetPressureMultiplier()
