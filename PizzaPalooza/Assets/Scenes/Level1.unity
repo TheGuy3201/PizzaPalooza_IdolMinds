@@ -12176,7 +12176,7 @@ MonoBehaviour:
   maxConcurrentOrders: 3
   baseSpawnInterval: 18
   minSpawnInterval: 8
-  toppingPool: 02000000030000000400000005000000
+  toppingPool: 020000000300000004000000
 --- !u!4 &1018166475
 Transform:
   m_ObjectHideFlags: 0
@@ -15524,7 +15524,7 @@ MonoBehaviour:
   maxConcurrentOrders: 3
   baseSpawnInterval: 18
   minSpawnInterval: 8
-  toppingPool: 02000000030000000400000005000000
+  toppingPool: 02000000030000000400000001000000
 --- !u!4 &1285390574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1927095934725912877, guid: a9b081014bad86f4a80b60284279d21b, type: 3}
