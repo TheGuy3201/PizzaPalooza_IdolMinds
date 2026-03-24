@@ -5,7 +5,7 @@ public enum PP_IngredientType
     Cheese,
     Pepperoni,
     Mushroom,
-    Olive,
-    Onion,
-    BellPepper
+    Olives,
+    Onions,
+    Peppers
 }

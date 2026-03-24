@@ -159,7 +159,7 @@ public class PP_AssemblyStation : MonoBehaviour, PP_IInteractable
             return;
         }
 
-        if (ingredientType == PP_IngredientType.Cheese || ingredientType == PP_IngredientType.Pepperoni || ingredientType == PP_IngredientType.Mushroom)
+        if (ingredientType == PP_IngredientType.Cheese || ingredientType == PP_IngredientType.Pepperoni || ingredientType == PP_IngredientType.Mushroom || ingredientType == PP_IngredientType.Olives || ingredientType == PP_IngredientType.Peppers || ingredientType == PP_IngredientType.Onions)
         {
             if (!pizza.HasDough && pizza.AddIngredient(PP_IngredientType.Dough))
             {

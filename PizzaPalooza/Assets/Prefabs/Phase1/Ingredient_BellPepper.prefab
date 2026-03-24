@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1965720648662024888
+--- !u!1 &3344061702027430061
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6698064490155489274}
-  - component: {fileID: 6675996599174139367}
-  - component: {fileID: 5297939862373146897}
-  - component: {fileID: 4704028996852100616}
-  - component: {fileID: 7205577521607660883}
-  - component: {fileID: 4734575924103778407}
+  - component: {fileID: 3342232289808714829}
+  - component: {fileID: 3140506172347348038}
+  - component: {fileID: 2349602998524581568}
+  - component: {fileID: 8888303189090033345}
+  - component: {fileID: 8824039485361202865}
+  - component: {fileID: 4022526861387856435}
   m_Layer: 0
-  m_Name: Ingredient_Dough
+  m_Name: Ingredient_BellPepper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6698064490155489274
+--- !u!4 &3342232289808714829
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965720648662024888}
+  m_GameObject: {fileID: 3344061702027430061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1353, y: 0.1074, z: 0}
-  m_LocalScale: {x: 0.22914499, y: 0.177208, z: 0.35}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.08, z: 0.35}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6675996599174139367
+--- !u!212 &3140506172347348038
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965720648662024888}
+  m_GameObject: {fileID: 3344061702027430061}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2054399275, guid: e1f9450ca93a1784b90344b1bd60b845, type: 3}
-  m_Color: {r: 0.93, g: 0.84, b: 0.64, a: 1}
+  m_Sprite: {fileID: -200969742, guid: a94d71f1944d12248add1876e41ce819, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -95,13 +95,13 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!65 &5297939862373146897
+--- !u!65 &2349602998524581568
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965720648662024888}
+  m_GameObject: {fileID: 3344061702027430061}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -116,13 +116,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4704028996852100616
+--- !u!54 &8888303189090033345
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965720648662024888}
+  m_GameObject: {fileID: 3344061702027430061}
   serializedVersion: 5
   m_Mass: 1
   m_LinearDamping: 0
@@ -143,29 +143,29 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7205577521607660883
+--- !u!114 &8824039485361202865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965720648662024888}
+  m_GameObject: {fileID: 3344061702027430061}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14eba2f54e50ec44fb188639b431237b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PP_PickupItem
-  rb: {fileID: 4704028996852100616}
---- !u!114 &4734575924103778407
+  rb: {fileID: 8888303189090033345}
+--- !u!114 &4022526861387856435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965720648662024888}
+  m_GameObject: {fileID: 3344061702027430061}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69bc84fc9c13f2e4587420e9014c8d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PP_IngredientItem
-  ingredientType: 0
+  ingredientType: 3
