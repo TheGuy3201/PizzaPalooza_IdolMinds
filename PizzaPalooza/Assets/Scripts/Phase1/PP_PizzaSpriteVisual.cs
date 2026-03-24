@@ -8,6 +8,9 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
     [SerializeField] private SpriteRenderer cheeseLayer;
     [SerializeField] private SpriteRenderer pepperoniLayer;
     [SerializeField] private SpriteRenderer mushroomLayer;
+    [SerializeField] private SpriteRenderer olivesLayer; // Optional future layer
+    [SerializeField] private SpriteRenderer peppersLayer; // Optional future layer
+    [SerializeField] private SpriteRenderer onionLayer; // Optional future layer
 
     [Header("Cook Tint")]
     [SerializeField] private Color rawTint = Color.white;
@@ -58,6 +61,18 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
                 Debug.Log($"[PP_PizzaSpriteVisual] Mushroom: mushroomLayer={mushroomLayer != null}");
                 SetLayerEnabled(mushroomLayer, true, "mushroom");
                 break;
+            case PP_IngredientType.Olives:
+                Debug.Log($"[PP_PizzaSpriteVisual] Olives: olivesLayer={olivesLayer != null}");
+                SetLayerEnabled(olivesLayer, true, "olives");
+                break;
+            case PP_IngredientType.Peppers:
+                Debug.Log($"[PP_PizzaSpriteVisual] Peppers: peppersLayer={peppersLayer != null}");
+                SetLayerEnabled(peppersLayer, true, "peppers");
+                break;
+            case PP_IngredientType.Onions:
+                Debug.Log($"[PP_PizzaSpriteVisual] Onions: onionLayer={onionLayer != null}");
+                SetLayerEnabled(onionLayer, true, "onions");
+                break;
         }
     }
 
@@ -84,6 +99,9 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
         ApplyTint(cheeseLayer, tint);
         ApplyTint(pepperoniLayer, tint);
         ApplyTint(mushroomLayer, tint);
+        ApplyTint(olivesLayer, tint);
+        ApplyTint(peppersLayer, tint);
+        ApplyTint(onionLayer, tint);
     }
 
     private static void ApplyTint(SpriteRenderer layer, Color tint)
@@ -118,8 +136,11 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
         cheeseLayer = FindLayer("Layer_Cheese", "Cheese", "CheeseLayer");
         pepperoniLayer = FindLayer("Layer_Pepperoni", "Pepperoni", "PepperoniLayer");
         mushroomLayer = FindLayer("Layer_Mushroom", "Mushroom", "MushroomLayer");
-        
-        Debug.Log($"[PP_PizzaSpriteVisual] Rebound layers: dough={doughLayer != null}, sauce={sauceLayer != null}, cheese={cheeseLayer != null}, pepperoni={pepperoniLayer != null}, mushroom={mushroomLayer != null}");
+        olivesLayer = FindLayer("Layer_Olives", "Olives", "OlivesLayer");
+        peppersLayer = FindLayer("Layer_Peppers", "Peppers", "PeppersLayer");
+        onionLayer = FindLayer("Layer_Onions", "Onions", "OnionsLayer");
+
+        Debug.Log($"[PP_PizzaSpriteVisual] Rebound layers: dough={doughLayer != null}, sauce={sauceLayer != null}, cheese={cheeseLayer != null}, pepperoni={pepperoniLayer != null}, mushroom={mushroomLayer != null}, olives={olivesLayer != null}, peppers={peppersLayer != null}, onions={onionLayer != null}");
     }
 
     /// <summary>
@@ -134,6 +155,9 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
         SetLayerEnabled(cheeseLayer, false, "cheese");
         SetLayerEnabled(pepperoniLayer, false, "pepperoni");
         SetLayerEnabled(mushroomLayer, false, "mushroom");
+        SetLayerEnabled(olivesLayer, false, "olives");
+        SetLayerEnabled(peppersLayer, false, "peppers");
+        SetLayerEnabled(onionLayer, false, "onions");
     }
 
     /// <summary>
