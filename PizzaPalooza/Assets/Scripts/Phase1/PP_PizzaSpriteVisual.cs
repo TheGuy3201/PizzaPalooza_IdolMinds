@@ -138,7 +138,7 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
         mushroomLayer = FindLayer("Layer_Mushroom", "Mushroom", "MushroomLayer");
         olivesLayer = FindLayer("Layer_Olives", "Olives", "OlivesLayer");
         peppersLayer = FindLayer("Layer_Peppers", "Peppers", "PeppersLayer");
-        onionLayer = FindLayer("Layer_Onions", "Onions", "OnionsLayer");
+        onionLayer = FindLayer("Layer_Onion", "Layer_Onions", "Onions", "OnionsLayer");
 
         Debug.Log($"[PP_PizzaSpriteVisual] Rebound layers: dough={doughLayer != null}, sauce={sauceLayer != null}, cheese={cheeseLayer != null}, pepperoni={pepperoniLayer != null}, mushroom={mushroomLayer != null}, olives={olivesLayer != null}, peppers={peppersLayer != null}, onions={onionLayer != null}");
     }

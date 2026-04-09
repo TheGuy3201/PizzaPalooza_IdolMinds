@@ -352,7 +352,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1460659165, guid: a94d71f1944d12248add1876e41ce819, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -502,6 +502,9 @@ MonoBehaviour:
   cheeseLayer: {fileID: 284378388803070627}
   pepperoniLayer: {fileID: 5841883654229874961}
   mushroomLayer: {fileID: 2980028334853945007}
+  olivesLayer: {fileID: 5614069736495697929}
+  peppersLayer: {fileID: 0}
+  onionLayer: {fileID: 0}
   rawTint: {r: 1, g: 1, b: 1, a: 1}
   cookedTint: {r: 0.9, g: 0.78, b: 0.6, a: 1}
   burntTint: {r: 0.35, g: 0.25, b: 0.18, a: 1}
@@ -584,7 +587,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 7
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1707546394, guid: a94d71f1944d12248add1876e41ce819, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
