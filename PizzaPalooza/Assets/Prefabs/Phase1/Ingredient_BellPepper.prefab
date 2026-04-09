@@ -168,4 +168,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69bc84fc9c13f2e4587420e9014c8d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PP_IngredientItem
-  ingredientType: 3
+  ingredientType: 7

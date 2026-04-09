@@ -25,7 +25,9 @@ public class PP_OrderManager : MonoBehaviour
     {
         PP_IngredientType.Cheese,
         PP_IngredientType.Pepperoni,
-        PP_IngredientType.Mushroom
+        PP_IngredientType.Mushroom,
+        PP_IngredientType.Onions,
+        PP_IngredientType.Olives
     };
 
     private readonly List<PP_Order> activeOrders = new List<PP_Order>();
@@ -33,6 +35,22 @@ public class PP_OrderManager : MonoBehaviour
     private float spawnTimer;
 
     public IReadOnlyList<PP_Order> ActiveOrders => activeOrders;
+
+    private void Awake()
+    {
+        // Initialize toppingPool if it's empty (in case serialization didn't work)
+        if (toppingPool.Count == 0)
+        {
+            toppingPool.AddRange(new[]
+            {
+                PP_IngredientType.Cheese,
+                PP_IngredientType.Pepperoni,
+                PP_IngredientType.Mushroom,
+                PP_IngredientType.Onions,
+                PP_IngredientType.Olives
+            });
+        }
+    }
 
     private void Start()
     {
