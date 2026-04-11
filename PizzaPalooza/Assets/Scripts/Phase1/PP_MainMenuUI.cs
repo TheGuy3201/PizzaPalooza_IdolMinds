@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class PP_MainMenuUI : MonoBehaviour
 {
     [Header("Scene")]
-    [SerializeField] private string gameplaySceneName = "FFK Sample Scene";
+    [SerializeField] private string level1 = "FFK Sample Scene";
+    [SerializeField] private string level2 = "FFK Sample Scene 2";
+    [SerializeField] private string level3 = "FFK Sample Scene 3";
 
     [Header("Panels")]
     [SerializeField] private GameObject rootPanel;
@@ -40,7 +42,7 @@ public class PP_MainMenuUI : MonoBehaviour
 
         if (Keyboard.current.digit1Key.wasPressedThisFrame)
         {
-            OnPlayPressed();
+            OnLevel1Pressed();
         }
 
         if (Keyboard.current.digit2Key.wasPressedThisFrame)
@@ -59,10 +61,22 @@ public class PP_MainMenuUI : MonoBehaviour
         }
     }
 
-    public void OnPlayPressed()
+    public void OnLevel1Pressed()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(gameplaySceneName);
+        SceneManager.LoadScene(level1);
+    }
+
+    public void OnLevel2Pressed()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(level2);
+    }
+
+    public void OnLevel3Pressed()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(level3);
     }
 
     public void OnHowToPressed()

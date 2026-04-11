@@ -69,7 +69,7 @@ public class PP_GameManager : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
