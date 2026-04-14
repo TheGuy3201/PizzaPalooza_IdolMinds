@@ -40,7 +40,6 @@ public class PP_Pizza : MonoBehaviour
         if (spriteVisual == null)
         {
             spriteVisual = GetComponentInChildren<PP_PizzaSpriteVisual>();
-            Debug.Log($"[PP_Pizza.AddIngredient] Re-cached spriteVisual: {(spriteVisual != null ? "found" : "NULL")}");
         }
 
         if (ingredientType == PP_IngredientType.Dough)
@@ -80,18 +79,10 @@ public class PP_Pizza : MonoBehaviour
         bool added = toppings.Add(ingredientType);
         if (added)
         {
-            Debug.Log($"[PP_Pizza.AddIngredient] Applying {ingredientType}, spriteVisual={spriteVisual != null}");
             spriteVisual?.ApplyIngredient(ingredientType);
-            LogPizzaState();
         }
 
         return added;
-    }
-
-    private void LogPizzaState()
-    {
-        string toppingsList = toppings.Count > 0 ? string.Join(", ", toppings) : "none";
-        Debug.Log($"[PP_Pizza] Current state: Dough={hasDough}, Sauce={hasSauce}, Toppings=[{toppingsList}]");
     }
 
     public bool IsReadyForOven()
@@ -109,7 +100,6 @@ public class PP_Pizza : MonoBehaviour
         if (cookState == CookState.Raw)
         {
             cookState = CookState.Cooked;
-            Debug.Log($"[PP_Pizza] Pizza now COOKED! Ingredients: Dough={hasDough}, Sauce={hasSauce}, Toppings=[{string.Join(", ", toppings)}]");
             spriteVisual?.ApplyCookState(cookState);
         }
     }
@@ -117,7 +107,6 @@ public class PP_Pizza : MonoBehaviour
     public void SetBurnt()
     {
         cookState = CookState.Burnt;
-        Debug.Log($"[PP_Pizza] Pizza now BURNT! Ingredients: Dough={hasDough}, Sauce={hasSauce}, Toppings=[{string.Join(", ", toppings)}]");
         spriteVisual?.ApplyCookState(cookState);
     }
 }

@@ -134,6 +134,8 @@ public class PP_AssemblyStation : MonoBehaviour, PP_IInteractable
                 Destroy(usedItem.gameObject);
             }
 
+            AudioManager.Play("Clunk");
+
             LogDebug($"Applied ingredient '{ingredient.IngredientType}' successfully.");
         }
         else

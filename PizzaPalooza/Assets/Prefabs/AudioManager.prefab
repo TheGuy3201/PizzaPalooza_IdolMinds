@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6814631295001074131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4338740041441143328}
+  - component: {fileID: 3709577319483970903}
+  - component: {fileID: 8421935779830612142}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4338740041441143328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814631295001074131}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.5158305, y: 2.1364233, z: 89.96606}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3709577319483970903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814631295001074131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28985d25dff5c9045a4bc43a592cec16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: GameplayMusic
+    volume: 0.6
+    pitch: 1
+    isLoop: 0
+    clip: {fileID: 8300000, guid: e64d1098be5534c4db1f3108acdd2755, type: 3}
+    mixer: {fileID: 7694948646252708809, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}
+  - name: MainMenu Music
+    volume: 1
+    pitch: 1
+    isLoop: 0
+    clip: {fileID: 8300000, guid: e16556ce86c4b634aa0c81b5a7f12a49, type: 3}
+    mixer: {fileID: 7694948646252708809, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}
+  - name: InsufficientFunds
+    volume: 0.7
+    pitch: 1
+    isLoop: 0
+    clip: {fileID: 8300000, guid: fdb7458cad93ee044a525d3357f663dc, type: 3}
+    mixer: {fileID: -2939687324124628828, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}
+  - name: Shot
+    volume: 0.1
+    pitch: 1
+    isLoop: 0
+    clip: {fileID: 8300000, guid: f4eb1bc03b191c94b8f60841ae4937d1, type: 3}
+    mixer: {fileID: -2939687324124628828, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}
+  - name: Death
+    volume: 0.261
+    pitch: 1
+    isLoop: 0
+    clip: {fileID: 8300000, guid: 558c6d2738ec11940bb057fbc4239b96, type: 3}
+    mixer: {fileID: -2939687324124628828, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}
+  - name: Oof
+    volume: 1
+    pitch: 1
+    isLoop: 0
+    clip: {fileID: 8300000, guid: adcfa2011c118fc468988a609b1776bc, type: 3}
+    mixer: {fileID: -2939687324124628828, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}
+  - name: EMP
+    volume: 0.1
+    pitch: 1
+    isLoop: 0
+    clip: {fileID: 8300000, guid: 3c4a94d4c58203148ad937c7be1226e6, type: 3}
+    mixer: {fileID: -2939687324124628828, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}
+  - name: Splash
+    volume: 0.1
+    pitch: 1
+    isLoop: 0
+    clip: {fileID: 8300000, guid: c5f82e222afb84447a63263103eb3b0d, type: 3}
+    mixer: {fileID: -2939687324124628828, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}
+--- !u!114 &8421935779830612142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814631295001074131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94665b34f537a84d954d98419b26c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: f50dc2050f690d846ab6c61615a0e885, type: 2}

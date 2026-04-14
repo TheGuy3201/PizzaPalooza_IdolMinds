@@ -38,39 +38,30 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
 
     public void ApplyIngredient(PP_IngredientType ingredient)
     {
-        Debug.Log($"[PP_PizzaSpriteVisual.ApplyIngredient] Applying {ingredient}");
         switch (ingredient)
         {
             case PP_IngredientType.Dough:
-                Debug.Log($"[PP_PizzaSpriteVisual] Dough: doughLayer={doughLayer != null}");
                 SetLayerEnabled(doughLayer, true, "dough");
                 break;
             case PP_IngredientType.Sauce:
-                Debug.Log($"[PP_PizzaSpriteVisual] Sauce: sauceLayer={sauceLayer != null}");
                 SetLayerEnabled(sauceLayer, true, "sauce");
                 break;
             case PP_IngredientType.Cheese:
-                Debug.Log($"[PP_PizzaSpriteVisual] Cheese: cheeseLayer={cheeseLayer != null}");
                 SetLayerEnabled(cheeseLayer, true, "cheese");
                 break;
             case PP_IngredientType.Pepperoni:
-                Debug.Log($"[PP_PizzaSpriteVisual] Pepperoni: pepperoniLayer={pepperoniLayer != null}");
                 SetLayerEnabled(pepperoniLayer, true, "pepperoni");
                 break;
             case PP_IngredientType.Mushroom:
-                Debug.Log($"[PP_PizzaSpriteVisual] Mushroom: mushroomLayer={mushroomLayer != null}");
                 SetLayerEnabled(mushroomLayer, true, "mushroom");
                 break;
             case PP_IngredientType.Olives:
-                Debug.Log($"[PP_PizzaSpriteVisual] Olives: olivesLayer={olivesLayer != null}");
                 SetLayerEnabled(olivesLayer, true, "olives");
                 break;
             case PP_IngredientType.Peppers:
-                Debug.Log($"[PP_PizzaSpriteVisual] Peppers: peppersLayer={peppersLayer != null}");
                 SetLayerEnabled(peppersLayer, true, "peppers");
                 break;
             case PP_IngredientType.Onions:
-                Debug.Log($"[PP_PizzaSpriteVisual] Onions: onionLayer={onionLayer != null}");
                 SetLayerEnabled(onionLayer, true, "onions");
                 break;
         }
@@ -117,7 +108,6 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
         if (layer != null)
         {
             layer.gameObject.SetActive(enabled);
-            Debug.Log($"[PP_PizzaSpriteVisual.SetLayerEnabled] {layerName} layer (GameObject: {layer.gameObject.name}) set active={enabled}");
         }
         else
         {
@@ -139,8 +129,6 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
         olivesLayer = FindLayer("Layer_Olives", "Olives", "OlivesLayer");
         peppersLayer = FindLayer("Layer_Peppers", "Peppers", "PeppersLayer");
         onionLayer = FindLayer("Layer_Onion", "Layer_Onions", "Onions", "OnionsLayer");
-
-        Debug.Log($"[PP_PizzaSpriteVisual] Rebound layers: dough={doughLayer != null}, sauce={sauceLayer != null}, cheese={cheeseLayer != null}, pepperoni={pepperoniLayer != null}, mushroom={mushroomLayer != null}, olives={olivesLayer != null}, peppers={peppersLayer != null}, onions={onionLayer != null}");
     }
 
     /// <summary>
@@ -149,7 +137,6 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
     /// </summary>
     private void ResetLayerVisibility()
     {
-        Debug.Log($"[PP_PizzaSpriteVisual.ResetLayerVisibility] Enabling dough, disabling toppings");
         SetLayerEnabled(doughLayer, true, "dough");
         SetLayerEnabled(sauceLayer, false, "sauce");
         SetLayerEnabled(cheeseLayer, false, "cheese");
@@ -181,7 +168,6 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
                 SpriteRenderer renderer = candidate.GetComponent<SpriteRenderer>();
                 if (renderer != null)
                 {
-                    Debug.Log($"[PP_PizzaSpriteVisual.FindLayer] Found layer via transform.Find('{names[i]}')");
                     return renderer;
                 }
             }
@@ -189,7 +175,6 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
 
         // Try searching all children by name
         SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>(true);
-        Debug.Log($"[PP_PizzaSpriteVisual.FindLayer] Searching {renderers.Length} SpriteRenderers for names: {string.Join(", ", names)}");
         
         for (int i = 0; i < renderers.Length; i++)
         {
@@ -198,7 +183,6 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
             {
                 if (rendererName == names[j])
                 {
-                    Debug.Log($"[PP_PizzaSpriteVisual.FindLayer] Found layer '{rendererName}' in children");
                     return renderers[i];
                 }
             }

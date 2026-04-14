@@ -86,10 +86,27 @@ public class PP_OrderManager : MonoBehaviour
             sb.Append("#").Append(order.orderId).Append(" | Patience: ")
                 .Append(Mathf.RoundToInt(order.patience * 100f)).Append("% | ");
 
-            sb.Append("Dough + Sauce");
+            bool hasDisplayedIngredient = false;
+            if (order.requireSauce)
+            {
+                sb.Append("Sauce");
+                hasDisplayedIngredient = true;
+            }
+
             for (int j = 0; j < order.toppings.Count; j++)
             {
-                sb.Append(" + ").Append(order.toppings[j]);
+                if (hasDisplayedIngredient)
+                {
+                    sb.Append(" + ");
+                }
+
+                sb.Append(order.toppings[j]);
+                hasDisplayedIngredient = true;
+            }
+
+            if (!hasDisplayedIngredient)
+            {
+                sb.Append("Plain");
             }
 
             if (i < activeOrders.Count - 1)
@@ -101,11 +118,12 @@ public class PP_OrderManager : MonoBehaviour
         return sb.ToString();
     }
 
-    public bool TryDeliver(PP_Pizza pizza, out int scoreDelta, out int tipDelta, out string feedback)
+    public bool TryDeliver(PP_Pizza pizza, out int scoreDelta, out int tipDelta, out string feedback, out bool isCorrectDelivery)
     {
         scoreDelta = 0;
         tipDelta = 0;
         feedback = "No order matched";
+        isCorrectDelivery = false;
 
         if (pizza == null || activeOrders.Count == 0)
         {
@@ -159,6 +177,7 @@ public class PP_OrderManager : MonoBehaviour
         tipDelta = Mathf.RoundToInt(40f * bestOrder.patience * bestMatch);
         gameManager.NotifyOrderCompleted(scoreDelta, tipDelta, bestOrder.patience);
         feedback = "Order complete";
+        isCorrectDelivery = true;
         return true;
     }
 
