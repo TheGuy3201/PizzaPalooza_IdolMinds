@@ -19,10 +19,30 @@ public class PP_DeliveryCounter : MonoBehaviour, PP_IInteractable
             return;
         }
 
-        if (orderManager.TryDeliver(pizza, out _, out _, out string feedback))
+        bool wasDelivered = orderManager.TryDeliver(pizza, out _, out _, out string feedback, out bool isCorrectDelivery);
+
+        if (wasDelivered)
         {
             interactor.ConsumeHeldItem();
             Destroy(held.gameObject);
+
+            if (isCorrectDelivery)
+            {
+                AudioManager.Play("Ding");
+            }
+            else
+            {
+                AudioManager.Play("Error");
+            }
+
+            if (hud != null)
+            {
+                hud.SetLastFeedback(feedback);
+            }
+        }
+        else if (feedback != "No order matched")
+        {
+            AudioManager.Play("Error");
             if (hud != null)
             {
                 hud.SetLastFeedback(feedback);

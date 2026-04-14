@@ -21,6 +21,7 @@ public class PP_OvenStation : MonoBehaviour, PP_IInteractable
         if (pizzaInOven.State == PP_Pizza.CookState.Raw && ovenTimer >= cookSeconds)
         {
             pizzaInOven.SetCooked();
+            AudioManager.Play("OvenFinish");
         }
 
         if (pizzaInOven.State == PP_Pizza.CookState.Cooked && ovenTimer >= cookSeconds + burnAfterCookedSeconds)

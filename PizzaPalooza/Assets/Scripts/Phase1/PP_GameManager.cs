@@ -116,6 +116,12 @@ public class PP_GameManager : MonoBehaviour
 
         IsGameOver = true;
         gameOverReason = reason;
+
+        if (reason == "Customers lost confidence")
+        {
+            AudioManager.Play("FUUU");
+        }
+
         hud?.ShowGameOver(this);
         Time.timeScale = 0f;
     }
