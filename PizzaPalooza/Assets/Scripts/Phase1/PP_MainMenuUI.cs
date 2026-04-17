@@ -21,6 +21,9 @@ public class PP_MainMenuUI : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         ShowRoot();
         if (defaultButton != null && EventSystem.current != null)
         {

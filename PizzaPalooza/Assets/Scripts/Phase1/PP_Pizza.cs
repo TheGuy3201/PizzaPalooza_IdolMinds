@@ -15,11 +15,13 @@ public class PP_Pizza : MonoBehaviour
 
     [SerializeField] private bool hasDough;
     [SerializeField] private bool hasSauce;
+    [SerializeField] private bool hasBeenDelivered;
     [SerializeField] private CookState cookState = CookState.Raw;
     [SerializeField] private PP_PizzaSpriteVisual spriteVisual;
 
     public bool HasDough => hasDough;
     public bool HasSauce => hasSauce;
+    public bool HasBeenDelivered => hasBeenDelivered;
     public CookState State => cookState;
     public IReadOnlyCollection<PP_IngredientType> Toppings => toppings;
 
@@ -92,7 +94,18 @@ public class PP_Pizza : MonoBehaviour
 
     public bool IsDeliverable()
     {
-        return cookState == CookState.Cooked || cookState == CookState.Burnt;
+        return !hasBeenDelivered && (cookState == CookState.Cooked || cookState == CookState.Burnt);
+    }
+
+    public bool TryMarkDelivered()
+    {
+        if (hasBeenDelivered)
+        {
+            return false;
+        }
+
+        hasBeenDelivered = true;
+        return true;
     }
 
     public void SetCooked()

@@ -156,10 +156,9 @@ public class PP_OrderManager : MonoBehaviour
 
         if (pizza.State == PP_Pizza.CookState.Burnt)
         {
-            activeOrders.Remove(bestOrder);
             gameManager.NotifyOrderFailed("Pizza was burnt");
-            feedback = "Burnt pizza delivered";
-            return true;
+            feedback = "Burnt pizza";
+            return false;
         }
 
         bool goodOrder = bestMatch >= 0.75f;
@@ -168,6 +167,12 @@ public class PP_OrderManager : MonoBehaviour
         {
             gameManager.NotifyOrderFailed("Order was incorrect");
             feedback = "Wrong recipe";
+            return false;
+        }
+
+        if (!pizza.TryMarkDelivered())
+        {
+            feedback = "Pizza already submitted";
             return false;
         }
 
@@ -215,9 +220,32 @@ public class PP_OrderManager : MonoBehaviour
 
     private void SpawnOrder()
     {
+        PP_Order order = null;
+        const int maxRecipeAttempts = 64;
+
+        for (int attempt = 0; attempt < maxRecipeAttempts; attempt++)
+        {
+            PP_Order candidate = CreateRandomOrder();
+            if (!HasDuplicateActiveRecipe(candidate))
+            {
+                order = candidate;
+                break;
+            }
+        }
+
+        if (order == null)
+        {
+            order = CreateRandomOrder();
+        }
+
+        order.orderId = nextOrderId++;
+        activeOrders.Add(order);
+    }
+
+    private PP_Order CreateRandomOrder()
+    {
         PP_Order order = new PP_Order
         {
-            orderId = nextOrderId++,
             patience = UnityEngine.Random.Range(0.75f, 1f),
             patienceDecay = UnityEngine.Random.Range(0.008f, 0.015f)
         };
@@ -231,7 +259,48 @@ public class PP_OrderManager : MonoBehaviour
             poolCopy.RemoveAt(index);
         }
 
-        activeOrders.Add(order);
+        return order;
+    }
+
+    private bool HasDuplicateActiveRecipe(PP_Order candidate)
+    {
+        for (int i = 0; i < activeOrders.Count; i++)
+        {
+            if (HaveSameRecipe(activeOrders[i], candidate))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private bool HaveSameRecipe(PP_Order a, PP_Order b)
+    {
+        if (a == null || b == null)
+        {
+            return false;
+        }
+
+        if (a.requireSauce != b.requireSauce)
+        {
+            return false;
+        }
+
+        if (a.toppings.Count != b.toppings.Count)
+        {
+            return false;
+        }
+
+        for (int i = 0; i < a.toppings.Count; i++)
+        {
+            if (!OrderHasTopping(b, a.toppings[i]))
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private float ComputeMatch(PP_Order order, PP_Pizza pizza)

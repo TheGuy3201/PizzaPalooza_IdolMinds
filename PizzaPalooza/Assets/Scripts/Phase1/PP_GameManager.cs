@@ -69,7 +69,7 @@ public class PP_GameManager : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("MainMenu");
+            GoToMainMenu("MainMenu");
         }
     }
 
@@ -122,6 +122,9 @@ public class PP_GameManager : MonoBehaviour
             AudioManager.Play("FUUU");
         }
 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         hud?.ShowGameOver(this);
         Time.timeScale = 0f;
     }
@@ -136,6 +139,8 @@ public class PP_GameManager : MonoBehaviour
     public void GoToMainMenu(string mainMenuSceneName)
     {
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(mainMenuSceneName);
     }
 }
