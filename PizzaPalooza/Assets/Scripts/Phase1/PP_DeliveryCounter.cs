@@ -19,21 +19,14 @@ public class PP_DeliveryCounter : MonoBehaviour, PP_IInteractable
             return;
         }
 
-        bool wasDelivered = orderManager.TryDeliver(pizza, out _, out _, out string feedback, out bool isCorrectDelivery);
+        orderManager.TryDeliver(pizza, out _, out _, out string feedback, out bool isCorrectDelivery);
 
-        if (wasDelivered)
+        if (isCorrectDelivery)
         {
             interactor.ConsumeHeldItem();
             Destroy(held.gameObject);
 
-            if (isCorrectDelivery)
-            {
-                AudioManager.Play("Ding");
-            }
-            else
-            {
-                AudioManager.Play("Error");
-            }
+            AudioManager.Play("Ding");
 
             if (hud != null)
             {

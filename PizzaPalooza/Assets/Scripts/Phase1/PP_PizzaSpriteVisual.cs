@@ -127,7 +127,7 @@ public class PP_PizzaSpriteVisual : MonoBehaviour
         pepperoniLayer = FindLayer("Layer_Pepperoni", "Pepperoni", "PepperoniLayer");
         mushroomLayer = FindLayer("Layer_Mushroom", "Mushroom", "MushroomLayer");
         olivesLayer = FindLayer("Layer_Olives", "Olives", "OlivesLayer");
-        peppersLayer = FindLayer("Layer_Peppers", "Peppers", "PeppersLayer");
+        peppersLayer = FindLayer("Layer_BellPepper", "Peppers", "PeppersLayer");
         onionLayer = FindLayer("Layer_Onion", "Layer_Onions", "Onions", "OnionsLayer");
     }
 
