@@ -12655,9 +12655,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42e71f8d2a15594890906d2e9e9aa3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PP_GameManager
-  shiftLengthSeconds: 180
+  shiftLengthSeconds: 280
   maxPressureMultiplierIncrease: 1
-  satisfactionLossPerFailure: 0.15
+  satisfactionLossPerFailure: 0.18
   satisfactionGainPerSuccess: 0.03
   hud: {fileID: 1912943305}
 --- !u!114 &1018166474
@@ -12673,9 +12673,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PP_OrderManager
   gameManager: {fileID: 1018166473}
-  maxConcurrentOrders: 3
-  baseSpawnInterval: 18
-  minSpawnInterval: 8
+  maxConcurrentOrders: 5
+  baseSpawnInterval: 22
+  minSpawnInterval: 10
   toppingPool: 0200000003000000040000000500000006000000
 --- !u!4 &1018166475
 Transform:
